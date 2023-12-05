@@ -11,20 +11,27 @@
 \usepackage{mathrsfs}
 \usepackage{bm}
 \usepackage{mdframed}
+\usepackage{hyperref}
 \setlength{\parindent}{0pt}
 
-\title{title}
-\author{Taka007}
+\definecolor{lightgray}{gray}{0.9}
+
+\title{Title}
+\author{\href{https://github.com/Taka0007}{Taka007}}
 \date{最終更新日：\today}
 
-% 定理環境の設定
-\newmdtheoremenv{theorem}{定理}
+% 定理環境のカスタマイズ
+\mdtheorem[%
+  linecolor=black,
+  linewidth=1.5pt,
+  frametitlerule=true,
+  frametitlebackgroundcolor=lightgray,
+  innertopmargin=\topskip,
+  frametitlebackgroundcolor=lightgray
+]{theorem}{定理}
 
 \begin{document}
 \maketitle
-
-
-
 
 
 \end{document}
