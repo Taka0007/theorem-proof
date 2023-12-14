@@ -1,0 +1,55 @@
+\RequirePackage{plautopatch}
+% \RequirePackage[l2tabu, orthodox]{nag}
+
+\documentclass{ltjsarticle}
+% \documentclass[platex,dvipdfmx]{jlreq}            % for platex
+% \documentclass[uplatex,dvipdfmx]{jlreq}        % for uplatex
+% \usepackage{graphicx}
+% \usepackage{bxtexlogo}
+% \usepackage{lmodern}
+\usepackage{amsmath, amssymb, amsthm}
+% \usepackage{mathtools}
+% \usepackage{mathrsfs}
+% \usepackage{bm}
+% \usepackage{mdframed}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{framed}
+\setlength{\parindent}{0pt}
+
+\makeatletter
+\renewenvironment{leftbar}{%
+  \renewcommand\FrameCommand{\vrule width 1pt \hspace{10pt}}%
+  \MakeFramed {\advance\hsize-\width \FrameRestore}}%
+ {\endMakeFramed}
+\makeatother
+
+\newcommand{\barquo}[1]{\begin{leftbar} \noindent #1 \end{leftbar}} % 左線つき引用
+
+\definecolor{lightgray}{gray}{0.9}
+
+\title{弱双対定理}
+\author{\href{https://github.com/Taka0007}{Taka007}}
+\date{最終更新日：\today}
+\begin{document}
+\maketitle
+
+%\tableofcontents
+%\newpage
+
+\barquo{
+$\bar{x}, \bar{y}$が主問題(P)、双対問題(D)の実行可能問題であるとき下記が成立 \\
+$$
+\bar{f_p} = c^T \bar{x} \geq b^T \bar{y} = {f_d}
+$$
+}
+
+[$Proof$] \\
+$
+\bar{x}は主問題の実行可能解であるため
+$
+
+
+
+
+\end{document}
